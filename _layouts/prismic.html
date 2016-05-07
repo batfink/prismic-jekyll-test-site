@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{{ document.fragments.date.value | date: "%-d. %b %Y" }}
+
+{{document.fragments.title.html}}
+
+
+<p>Skrevet av: {{document.fragments.author.text}}</p>
+
+{{document.fragments.lead.html}}
+
+{{ document.fragments.body.html }}
